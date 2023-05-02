@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'Scarlat Marius',
     path: '/',
   },
   {
@@ -9,8 +9,8 @@ const routes = [
     path: '/about',
   },
   {
-    label: 'Resume',
-    path: '/resume',
+    label: 'Contact',
+    path: '/contact',
   },
   {
     label: 'Projects',
@@ -21,8 +21,8 @@ const routes = [
     path: '/stats',
   },
   {
-    label: 'Contact',
-    path: '/contact',
+    label: 'Resume',
+    path: '/resume',
   },
 ];
 

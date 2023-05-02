@@ -5,7 +5,7 @@ const Age = () => {
 
   const tick = () => {
     const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
-    const birthTime = new Date('1990-02-05T09:24:00');
+    const birthTime = new Date('2004-01-02T09:24:00');
     setAge(((Date.now() - birthTime) / divisor).toFixed(11));
   };
 
@@ -20,21 +20,34 @@ const Age = () => {
 
 const data = [
   {
-    key: 'age',
-    label: 'Current age',
-    value: <Age />,
+    key: 'birthday',
+    label: 'Birthday',
+    value: 'Jan 02, 2004',
   },
   {
-    key: 'countries',
-    label: 'Countries visited',
-    value: 53,
-    link:
-      'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
+    key: 'age',
+    label: 'Current Age',
+    value: <Age />,
   },
   {
     key: 'location',
     label: 'Current city',
-    value: 'New York, NY',
+    value: 'Bucharest, Romania',
+  },
+  {
+    key: 'languages',
+    label: 'Languages',
+    value: 'English, Romanian',
+  },
+  {
+    key: 'countries',
+    label: 'Countries visited',
+    value: 2,
+  },
+  {
+    key: 'programming_languages',
+    label: 'Programming Languages',
+    value: 'C, C++, Python, SQL, Go, C#, Java, JavaScript, TypeScript',
   },
 ];
 

@@ -1,47 +1,59 @@
-// TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    title: 'Wordle Solver',
+    subtitle: 'Wordle Solver',
+    image: '/images/projects/wordle.png',
+    link: 'https://github.com/SenorDevelopers/WordleSolver',
+    date: '2022-11-20',
     desc:
-      'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+      'Built a wordle solver using data science and entropy '
+      + 'with some university colleagues. '
+      + 'The purpose of the algorithm is maximize the amount of information '
+      + 'at each step and cache it to avoid any future computations.',
   },
   {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
+    title: 'Phoenix',
+    subtitle: 'Phoenix',
+    image: '/images/projects/phoenix.png',
+    link: 'https://github.com/phoenix-algo/phoenix',
+    date: '2021-06-20',
     desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+      'Phoenix is a competitive programming website'
+      + ' like leetcode and codeforces'
+      + ' which allows users to run their code'
+      + ' in a secure and fast environment.',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
+    title: 'Spotify Clone',
+    subtitle: 'Spotify Clone',
+    link: 'https://github.com/marius004/spotify-clone',
+    image: '/images/projects/spotify-clone.png',
+    date: '2020-05-28',
     desc:
-      'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
+     'Being a big music fan, I have always wanted to build my own'
+     + ' music player so that I could listen to my favourite artists'
+     + ' without having to skip annoying ads.',
   },
   {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
+    title: 'Sorting Visualizer',
+    subtitle: 'Sorting Visualizer',
+    link: 'https://marius004.github.io/sorting-visualizer/',
+    image: '/images/projects/sorting-visualizer.png',
+    date: '2020-06-20',
     desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-      + 'Over 60,000 cats were classified before server bills made the project too expensive '
-      + 'to continue hosting.',
+      'Built a sorting algorithm visualizer that sorts the randomly generated'
+      + ' heights increasingly according to the selected sorting algorithm.',
+  },
+  {
+    title: 'Chess Game',
+    subtitle: 'A simple Chess Game',
+    link: 'https://github.com/marius004/Chess-Game',
+    image: '/images/projects/chess.png',
+    date: '2019-04-15',
+    desc:
+      'One of the first projects I have ever built. The game consists of '
+      + ' a simple chess game engine that displays the legal moves of the player.'
+      + ' The game itself was a great introduction to OOP and design patterns.',
   },
 ];
 
