@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from '../layouts/Main';
 
-const RESUME_URL = 'https://github.com/marius004/resume/blob/master/public/resume.pdf?raw=true';
+const RESUME_URL = 'https://github.com/marius004/me/blob/master/public/resume.pdf?raw=true';
 
 const Resume = () => (
   <Main
