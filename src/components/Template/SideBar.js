@@ -19,9 +19,11 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Marius.
-        I am a <a href="https://fmi.unibuc.ro/en/">University of Bucharest</a> undergraduate
-        looking for challenges and opportunities.
+      <p>
+        I&apos;m enthusiastic about software architecture, distributed systems,
+        data structures, and algorithms. Beyond coding, I enjoy traveling,
+        exploring new places, listening to music, working out, and trying
+        out new things.
       </p>
       <ul className="actions">
         <li>

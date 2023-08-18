@@ -42,7 +42,7 @@ const data = [
   {
     key: 'countries',
     label: 'Countries visited',
-    value: 2,
+    value: 4,
   },
   {
     key: 'programming_languages',
