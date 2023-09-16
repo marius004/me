@@ -10,7 +10,7 @@ const Resume = () => (
   >
     <article className="post" id="resume">
       <div className="title">
-        <a className="download-button" id="download-resume-button" href={RESUME_URL} embed>OPEN</a>
+        <a className="download-button" id="download-resume-button" href={RESUME_URL}>OPEN</a>
       </div>
       <iframe
         title="resume"
