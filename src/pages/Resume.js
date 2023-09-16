@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from '../layouts/Main';
 
-const RESUME_URL = 'https://github.com/marius004/me/blob/master/public/resume.pdf?raw=true';
+const RESUME_URL = 'https://docs.google.com/document/d/1TMcHooyW2QqGxJeslZ8rZ5z3moOAxhywCnNfW209ogk/view?rm=minimal';
 
 const Resume = () => (
   <Main
@@ -10,11 +10,11 @@ const Resume = () => (
   >
     <article className="post" id="resume">
       <div className="title">
-        <a className="download-button" id="download-resume-button" href={RESUME_URL} download>Download</a>
+        <a className="download-button" id="download-resume-button" href={RESUME_URL}>OPEN</a>
       </div>
       <iframe
         title="resume"
-        src={`https://docs.google.com/gview?url=${RESUME_URL}&embedded=true`}
+        src={RESUME_URL}
       />
     </article>
   </Main>
