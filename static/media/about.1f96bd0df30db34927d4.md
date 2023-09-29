@@ -1,11 +1,11 @@
 # Intro
-<p>I am currently interning at Google Poland while also pursuing my bachelor's degree in Computer Science at the University of Bucharest. My background includes work as a Software Engineer at Netrom Software and the honor of being awarded the Bronze Medal at The Romanian National Olympiad in Informatics.</p> <br>
+<p>My background includes valuable software engineering internships at Google Poland and NetRom Software. Additionally, I have the honor of being awarded the Bronze Medal at The Romanian National Olympiad in Informatics.</p> <br>
 
 <p>
 I'm enthusiastic about software architecture, distributed systems, data structures, and algorithms. Beyond coding, I enjoy traveling, exploring new places, listening to music, working out, and trying out new things. I am particularly interested in learning more about Operating Systems, Computer Networking, Artificial Intelligence, and Machine Learning. <p>
 
 # Education
-* <strong>BS in Computer Science</strong>, 2022 - 2025
+* <strong>BSc in Computer Science</strong>, 2022 - 2025
 &nbsp;&nbsp;University of Bucharest
 
 # Work Experience
@@ -44,6 +44,7 @@ I'm enthusiastic about software architecture, distributed systems, data structur
     <li>Software Architecture</li>
     <li>Distributed Systems</li>
     <li>Heavy Metal</li>
+    <li>Working out</li>
     <li>Travelling</li>
 </ul>
 
