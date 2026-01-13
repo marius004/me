@@ -1,0 +1,54 @@
+:root {
+    --bg: #ffffff;
+    --bg-alt: #f4f4f4;
+    --fg: #646464;
+    --fg-bold: #3c3b3b;
+    --fg-light: #aaaaaa;
+    --border: rgba(160, 160, 160, 0.3);
+    --border-bg: rgba(160, 160, 160, 0.075);
+    --border-alt: rgba(160, 160, 160, 0.65);
+    --accent: #2e59ba;
+    --accent-light: rgba(46, 89, 186, 0.05);
+    /* transparentize(accent, 0.95) from #2e59ba */
+}
+
+[data-theme="dark"] {
+    --bg: #1e1e1e;
+    --bg-alt: #2d2d2d;
+    --fg: #dadada;
+    --fg-bold: #eeeeee;
+    --fg-light: #888888;
+    --border: rgba(255, 255, 255, 0.1);
+    --border-bg: rgba(255, 255, 255, 0.05);
+    --border-alt: rgba(255, 255, 255, 0.2);
+    --accent: #6188e6;
+    /* Lighter blue for dark mode */
+    --accent-light: rgba(97, 136, 230, 0.1);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    box-shadow: none;
+    /* Override default button shadow */
+    color: var(--fg-bold);
+    cursor: pointer;
+    font-size: 1.25em;
+    padding: 0 0.5em;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &:hover {
+        color: var(--accent);
+        box-shadow: none !important;
+        /* Ensure hover doesn't add it back */
+    }
+
+    &:active {
+        background-color: transparent !important;
+        /* Prevent background on click */
+    }
+}

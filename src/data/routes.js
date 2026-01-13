@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: 'Scarlat Marius',
+    label: 'Marius Scarlat',
     path: '/',
   },
   {
@@ -9,20 +9,13 @@ const routes = [
     path: '/about',
   },
   {
-    label: 'Contact',
-    path: '/contact',
-  },
-  {
-    label: 'Projects',
-    path: '/projects',
-  },
-  {
-    label: 'Stats',
-    path: '/stats',
-  },
-  {
     label: 'Resume',
     path: '/resume',
+  },
+  {
+    label: 'Blog',
+    path: '/blog',
+    badge: 'coming soon',
   },
 ];
 

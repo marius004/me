@@ -6,28 +6,42 @@
 
 /* Sidebar */
 
-	#sidebar {
-		margin-right: _size(section-spacing);
-		min-width: 22em;
-		width: 22em;
+#sidebar {
+	margin-right: _size(section-spacing);
+	min-width: 22em;
+	width: 22em;
 
-		> * {
-			border-top: solid 1px _palette(border);
-			margin: _size(section-spacing) 0 0 0;
-			padding: _size(section-spacing) 0 0 0;
-		}
-
-		> :first-child {
-			border-top: 0;
-			margin-top: 0;
-			padding-top: 0;
-		}
-
-		@include breakpoint(large) {
-			border-top: solid 1px _palette(border);
-			margin: _size(section-spacing) 0 0 0;
-			min-width: 0;
-			padding: _size(section-spacing) 0 0 0;
-			width: 100%;
-		}
+	>* {
+		border-top: solid 1px _palette(border);
+		margin: _size(section-spacing) 0 0 0;
+		padding: _size(section-spacing) 0 0 0;
 	}
+
+	> :first-child {
+		border-top: 0;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#footer {
+		margin-top: 1.5em;
+		padding-top: 1.5em;
+	}
+
+	.blurb {
+		margin-top: 1.5em;
+		padding-top: 1.5em;
+	}
+
+	@include breakpoint(medium) {
+		display: none;
+	}
+
+	@include breakpoint(large) {
+		border-top: solid 1px _palette(border);
+		margin: _size(section-spacing) 0 0 0;
+		min-width: 0;
+		padding: _size(section-spacing) 0 0 0;
+		width: 100%;
+	}
+}

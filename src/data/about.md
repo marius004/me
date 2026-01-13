@@ -1,53 +1,25 @@
 # Intro
-<p>My background includes valuable software engineering internships at Google Poland and NetRom Software. Additionally, I have the honor of being awarded the Bronze Medal at The Romanian National Olympiad in Informatics.</p> <br>
 
-<p>
-I'm enthusiastic about software architecture, distributed systems, data structures, and algorithms. Beyond coding, I enjoy traveling, exploring new places, listening to music, working out, and trying out new things. I am particularly interested in learning more about Operating Systems, Computer Networking, Artificial Intelligence, and Machine Learning. <p>
+Hi, I'm <strong>Marius</strong> — Software Engineer at <strong>Google</strong> in <i>Warsaw</i>, bringing the vision of the datacenter as a single, massive computer one step closer to reality. Because <b><i>"Hope is not a strategy"</i></b>, I break things at scale and rebuild them stronger.
 
 # Education
-* <strong>BSc in Computer Science</strong>, 2022 - 2025
-&nbsp;&nbsp;University of Bucharest
+* **BSc in Computer Science**, University of Bucharest, 2022 - 2025
 
 # Work Experience
-* <strong>Google</strong>, <strong>STEP Software Engineering Intern</strong>, July 2023 - Sep 2023
-* <strong>NetRom Software</strong>, <strong>Software Engineer</strong>, July 2022 - October 2022
-&nbsp;&nbsp; 
 
-# Skills
+* **Google**, **Software Engineer**, June 2025 - Present
+* **Google**, ** Software Engineering Intern**, July 2024 - Sep 2024
+* **Google**, **STEP Software Engineering Intern**, July 2023 - Sep 2023
+* **NetRom Software**, **Software Engineer**, July 2022 - October 2022
+&nbsp;&nbsp;
 
-<ul>
-    <li>Data Structures</li>
-    <li>Algorithms</li>
-    <li>Python</li>
-    <li>GRPC</li>
-    <li>Go</li>
-    <li>Unit testing</li>
-    <li>Java</li>
-    <li>.NET</li>
-    <li>SOLID</li>
-    <li>C/C++</li>
-    <li>Javascript</li>
-    <li>Linux</li>
-    <li>Design Patterns</li>
-    <li>Communication</li>
-    <li>Independence</li>
-    <li>Leadership</li>
-    <li>Problem Solving</li>
-    <li>Adaptability</li>
-    <li>Teamwork</li>
-</ul>
-
-# Interests
-
-<ul>
-    <li>Competitive Programming</li>
-    <li>Software Architecture</li>
-    <li>Distributed Systems</li>
-    <li>Heavy Metal</li>
-    <li>Working out</li>
-    <li>Travelling</li>
-</ul>
+# Books
+* [Site Reliability Engineering](https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X)
+* [The Site Reliability Workbook](https://www.amazon.com/Site-Reliability-Workbook-Practical-Implement/dp/1492029505)
+* [Building Secure & Reliable Systems](https://www.amazon.com/Building-Secure-Reliable-Systems-Implementing/dp/1492083127)
+* [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+* [The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines](https://www.amazon.com/dp/3031994884)
 
 # Achievements
-* Bronze Medal at The Romanian National Olympiad in Informatics
-* 3rd in Cloud flight Coding Contest, Craiova
+* Winner, [Nitro NLP Hackathon 2025](https://nitro-ai.org/hackathon/2025), Bucharest, 2025
+* Bronze Medal at The Romanian National Olympiad in Informatics, Craiova, 2020

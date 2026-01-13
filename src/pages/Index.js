@@ -5,20 +5,20 @@ import Main from '../layouts/Main';
 
 const Index = () => (
   <Main
-    description={"Scarlat Marius's personal website. University of Bucharest undergraduate."}
+    description={"Marius Scarlat's personal website. University of Bucharest undergraduate."}
   >
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2><Link to="/">About this site</Link></h2>
+          <h2>
+            <Link to="/">
+              Software Engineer <strong>@</strong> Google Warsaw
+            </Link>
+          </h2>
         </div>
       </header>
-      <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
-        or you can check out my {' '}
-        <Link to="/resume">resume</Link>, {' '}
-        <Link to="/projects">projects</Link>, {' '}
-        view <Link to="/stats">site statistics</Link>, {' '}
-        or <Link to="/contact">contact</Link> me.
+      <p>
+        Architecting the next-generation data centers that run the world.
       </p>
     </article>
   </Main>

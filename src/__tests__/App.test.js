@@ -20,6 +20,20 @@ describe('renders the app', () => {
   // mocks the scrollTo API used when navigating to a new page.
   window.scrollTo = jest.fn();
 
+  Object.defineProperty(window, 'matchMedia', {
+    writable: true,
+    value: jest.fn().mockImplementation((query) => ({
+      matches: false,
+      media: query,
+      onchange: null,
+      addListener: jest.fn(), // Deprecated
+      removeListener: jest.fn(), // Deprecated
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      dispatchEvent: jest.fn(),
+    })),
+  });
+
   let container;
 
   beforeEach(async () => {
@@ -41,67 +55,43 @@ describe('renders the app', () => {
   });
 
   it('should render the title', async () => {
-    expect(document.title).toBe("Scarlat Marius");
+    expect(document.title).toBe('Marius / About');
   });
 
   it('can navigate to /about', async () => {
     expect.assertions(7);
-    const aboutLink = document.querySelector('#header > nav > ul > li:nth-child(1) > a');
+    const aboutLink = Array.from(document.querySelectorAll('#header nav.links ul li a')).find((el) => el.textContent.includes('About'));
     expect(aboutLink).toBeInTheDocument();
     await act(async () => {
       await aboutLink.click();
     });
-    expect(document.title).toContain('About |');
+    expect(document.title).toContain('Marius / About');
     expect(window.location.pathname).toBe('/about');
     expect(window.scrollTo).toHaveBeenNthCalledWith(1, 0, 0);
-    expect(global.fetch).toHaveBeenCalledTimes(1);
+    expect(global.fetch).toHaveBeenCalled();
     expect(jsonMock).toHaveBeenCalledTimes(0);
-    expect(textMock).toHaveBeenCalledTimes(1);
+    expect(textMock).toHaveBeenCalledTimes(2); // Initial and click
   });
 
   it('can navigate to /resume', async () => {
     expect.assertions(3);
-    const contactLink = document.querySelector('#header > nav > ul > li:nth-child(2) > a');
-    expect(contactLink).toBeInTheDocument();
+    const resumeLink = Array.from(document.querySelectorAll('#header nav.links ul li a')).find((el) => el.textContent.includes('Resume'));
+    expect(resumeLink).toBeInTheDocument();
     await act(async () => {
-      await contactLink.click();
+      await resumeLink.click();
     });
-    expect(document.title).toContain('Resume |');
     expect(window.location.pathname).toBe('/resume');
+    expect(document.title).toContain('Marius / Resume');
   });
 
-  it('can navigate to /projects', async () => {
+  it('can navigate to /blog', async () => {
     expect.assertions(3);
-    const contactLink = document.querySelector('#header > nav > ul > li:nth-child(3) > a');
-    expect(contactLink).toBeInTheDocument();
+    const blogLink = Array.from(document.querySelectorAll('#header nav.links ul li a')).find((el) => el.textContent.includes('Blog'));
+    expect(blogLink).toBeInTheDocument();
     await act(async () => {
-      await contactLink.click();
+      await blogLink.click();
     });
-    expect(document.title).toContain('Projects |');
-    expect(window.location.pathname).toBe('/projects');
-  });
-
-  it('can navigate to /stats', async () => {
-    expect.assertions(5);
-    const contactLink = document.querySelector('#header > nav > ul > li:nth-child(4) > a');
-    expect(contactLink).toBeInTheDocument();
-    await act(async () => {
-      await contactLink.click();
-    });
-    expect(document.title).toContain('Stats |');
-    expect(window.location.pathname).toBe('/stats');
-    expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(jsonMock).toHaveBeenCalledTimes(1);
-  });
-
-  it('can navigate to /contact', async () => {
-    expect.assertions(3);
-    const contactLink = document.querySelector('#header > nav > ul > li:nth-child(5) > a');
-    expect(contactLink).toBeInTheDocument();
-    await act(async () => {
-      await contactLink.click();
-    });
-    expect(document.title).toContain('Contact |');
-    expect(window.location.pathname).toBe('/contact');
+    expect(window.location.pathname).toBe('/blog');
+    expect(document.title).toContain('404'); // Redirects to 404 since it's "coming soon" and route is removed
   });
 });

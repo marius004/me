@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
 
 import Main from '../layouts/Main';
+import Personal from '../components/Stats/Personal';
 
 const About = () => {
   const [markdown, setMarkdown] = useState('');
@@ -16,22 +17,18 @@ const About = () => {
       });
   });
 
-  const count = markdown.split(/\s+/)
-    .map((s) => s.replace(/\W/g, ''))
-    .filter((s) => s.length).length;
-
   return (
     <Main
       title="About"
-      description="Learn about Scarlat Marius"
+      description="Learn about Marius Scarlat"
     >
       <article className="post markdown" id="about">
         <header>
           <div className="title">
             <h2><Link to="/about">About Me</Link></h2>
-            <p>(in about {count} words)</p>
           </div>
         </header>
+        <Personal />
         <Markdown>
           {markdown}
         </Markdown>

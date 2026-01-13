@@ -32,23 +32,14 @@ const data = [
   {
     key: 'location',
     label: 'Current city',
-    value: 'Bucharest, Romania',
+    value: 'Warsaw, Poland',
   },
   {
     key: 'languages',
     label: 'Languages',
     value: 'English, Romanian',
   },
-  {
-    key: 'countries',
-    label: 'Countries visited',
-    value: 4,
-  },
-  {
-    key: 'programming_languages',
-    label: 'Programming Languages',
-    value: 'C, C++, Python, SQL, Go, C#, Java, JavaScript, TypeScript',
-  },
+
 ];
 
 export default data;

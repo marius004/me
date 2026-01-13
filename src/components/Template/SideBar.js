@@ -12,29 +12,25 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Scarlat Marius</h2>
-        <p><a href="mailto:scarlatmariusstefan2018@gmail.com">scarlatmariusstefan2018@gmail.com</a></p>
+        <h2>Marius Scarlat</h2>
+        <p style={{ marginBottom: '0.25em' }}><a href="mailto:scarlatmariusstefan2018@gmail.com">scarlatmariusstefan2018@gmail.com</a></p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
       <p>
-        I&apos;m enthusiastic about software architecture, distributed systems,
-        data structures, and algorithms. Beyond coding, I enjoy traveling,
-        exploring new places, listening to music, working out, and trying
-        out new things.
+        Hi, I&apos;m <strong>Marius</strong> — Software Engineer at <strong>Google</strong> {' '}
+        in <i>Warsaw</i>, bringing the vision of the datacenter as a single, massive computer
+        one step closer to reality. Because
+        <strong><i>&quot;Hope is not a strategy&quot;</i></strong>,
+        I break things at scale and rebuild them stronger.
       </p>
-      <ul className="actions">
-        <li>
-          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
-        </li>
-      </ul>
     </section>
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Scarlat Marius <Link to="/">marius004.github.com</Link>.</p>
+      <p className="copyright">&copy; {new Date().getFullYear()} Marius Scarlat</p>
     </section>
   </section>
 );

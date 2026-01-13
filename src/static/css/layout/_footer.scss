@@ -6,9 +6,56 @@
 
 /* Footer */
 
-	#footer {
+#footer {
+	.icons {
+		color: _palette(fg-light);
+	}
+
+	.copyright {
+		color: _palette(fg-light);
+		font-family: _font(family-heading);
+		font-size: 0.5em;
+		font-weight: _font(weight-heading);
+		letter-spacing: _font(kerning-heading);
+		text-transform: uppercase;
+		margin-top: 0.5em;
+	}
+
+	body.single & {
+		text-align: center;
+	}
+}
+
+#footer-mobile {
+	display: none;
+
+	@include breakpoint(medium) {
+		display: block;
+		width: 100%;
+		margin: 2em 0 1em 0;
+		text-align: center;
+		border-top: solid 1px _palette(border);
+		padding-top: 2em;
+
 		.icons {
-			color: _palette(fg-light);
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			padding: 0;
+
+			li {
+				padding: 0 0.75em;
+
+				a {
+					color: _palette(fg-light);
+					border-bottom: 0;
+					font-size: 1.25em;
+
+					&:hover {
+						color: _palette(accent);
+					}
+				}
+			}
 		}
 
 		.copyright {
@@ -18,9 +65,7 @@
 			font-weight: _font(weight-heading);
 			letter-spacing: _font(kerning-heading);
 			text-transform: uppercase;
-		}
-
-		body.single & {
-			text-align: center;
+			margin-top: 0.5em;
 		}
 	}
+}
