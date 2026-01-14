@@ -12,15 +12,12 @@ const About = lazy(() => import('./pages/About'));
 
 const NotFound = lazy(() => import('./pages/NotFound'));
 
-const Resume = lazy(() => import('./pages/Resume'));
-
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
     <Suspense fallback={<Main />}>
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

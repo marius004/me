@@ -112,6 +112,55 @@ button,
 	}
 }
 
+.accent-button {
+	box-shadow: inset 0 0 0 1px _palette(accent) !important;
+	color: _palette(accent) !important;
+
+	&:hover {
+		background-color: rgba(_palette(accent), 0.05);
+	}
+}
+
+.post#about {
+	>header {
+		border-bottom: 0 !important;
+
+		.meta {
+			border-left: 0 !important;
+
+			// Handle mobile view for the Resume button
+			@include breakpoint(medium) {
+				border-left: 0 !important;
+				margin: 1em 0 0 0 !important;
+				padding: 0 !important;
+				width: 100% !important;
+
+				.button {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+	}
+
+	table {
+		margin-bottom: 0;
+
+		tbody tr {
+			border: 0 !important;
+
+			// Zebra striping - restoring the default from _table.scss but keeping it borderless
+			&:nth-child(2n + 1) {
+				background-color: _palette(border-bg) !important;
+			}
+
+			&:nth-child(2n) {
+				background-color: transparent !important;
+			}
+		}
+	}
+}
+
 #download-resume-button {
 	width: auto;
 	display: inline-flex;

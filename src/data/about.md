@@ -22,4 +22,4 @@ Hi, I'm <strong>Marius</strong> — Software Engineer at <strong>Google</strong>
 
 # Achievements
 * Winner, [Nitro NLP Hackathon 2025](https://nitro-ai.org/hackathon/2025), Bucharest, 2025
-* Bronze Medal at The Romanian National Olympiad in Informatics, Craiova, 2020
+* Bronze Medal, Romanian National Olympiad in Informatics, Craiova, 2021
