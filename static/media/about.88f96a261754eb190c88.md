@@ -1,6 +1,7 @@
 # Intro
 
-Hi, I'm <strong>Marius</strong> — Software Engineer at <strong>Google</strong> in <i>Warsaw</i>, bringing the vision of the datacenter as a single, massive computer one step closer to reality. Because <b><i>"Hope is not a strategy"</i></b>, I break things at scale and rebuild them stronger.
+Hello there! I'm <strong>Marius</strong> 👋 — Software Engineer at <strong>Google</strong> Warsaw. I am passionate about building resilient <b>Distributed Systems</b>, <b>Machine Learning</b> and <b>Site Reliability Engineering (SRE)</b>.
+
 
 # Education
 * **BSc in Computer Science**, University of Bucharest, 2022 - 2025
@@ -21,5 +22,5 @@ Hi, I'm <strong>Marius</strong> — Software Engineer at <strong>Google</strong>
 * [The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines](https://www.amazon.com/dp/3031994884)
 
 # Achievements
-* Winner, [Nitro NLP Hackathon 2025](https://nitro-ai.org/hackathon/2025), Bucharest, 2025
+* Winner, [Nitro NLP Hackathon](https://nitro-ai.org/hackathon/2025), Bucharest, 2025
 * Bronze Medal, Romanian National Olympiad in Informatics, Craiova, 2021
