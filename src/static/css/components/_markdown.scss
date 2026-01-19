@@ -1,0 +1,20 @@
+// About page (/about)
+
+.markdown {
+  text-align: left;
+
+  @include breakpoint(large) {
+    margin-top: 2em;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 0.95em;
+    font-weight: 700;
+    margin-top: 2.5em;
+    text-align: left;
+  }
+}

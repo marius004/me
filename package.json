@@ -1,0 +1,77 @@
+{
+  "name": "personal-site",
+  "version": "4.0.0",
+  "homepage": "https://marius004.github.io/me",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marius004/me.git"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "scripts": {
+    "build": "rimraf ./build && react-scripts build",
+    "predeploy": "npm run build && react-snap",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "lint": "eslint $(git ls-files '*.js')",
+    "test": "npx jest",
+    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js"
+  },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "skipThirdPartyRequests": true
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "0.2.0",
+    "dayjs": "^1.11.7",
+    "markdown-to-jsx": "^7.2.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-burger-menu": "^3.0.9",
+    "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
+    "react-helmet-async": "^1.3.0",
+    "react-router-dom": "^6.11.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^6.0.0",
+    "react-snap": "^1.23.0",
+    "rimraf": "^5.0.0",
+    "sass": "^1.62.1",
+    "source-map-explorer": "^2.5.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

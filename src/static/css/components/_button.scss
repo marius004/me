@@ -1,0 +1,169 @@
+///
+/// Future Imperfect by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Button */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+	@include vendor('appearance', 'none');
+	@include vendor('transition', ('background-color #{_duration(transition)} ease',
+			'box-shadow #{_duration(transition)} ease',
+			'color #{_duration(transition)} ease'
+		));
+	background-color: transparent;
+	border: 0;
+	box-shadow: inset 0 0 0 1px _palette(border);
+	color: _palette(fg-bold) !important;
+	cursor: pointer;
+	display: inline-block;
+	font-family: _font(family-heading);
+	font-size: 0.6em;
+	font-weight: _font(weight-heading-bold);
+	height: _size(element-height) * 1.75;
+	letter-spacing: _font(kerning-heading);
+	line-height: _size(element-height) * 1.75;
+	padding: 0 2.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+	&:hover {
+		box-shadow: inset 0 0 0 1px _palette(accent);
+		color: _palette(accent) !important;
+
+		&:active {
+			background-color: var(--accent-light);
+		}
+	}
+
+	&:before,
+	&:after {
+		color: _palette(fg-light);
+		position: relative;
+	}
+
+	&:before {
+		left: -1em;
+		padding: 0 0 0 0.75em;
+	}
+
+	&:after {
+		left: 1em;
+		padding: 0 0.75em 0 0;
+	}
+
+	&.fit {
+		display: block;
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		width: 100%;
+	}
+
+	&.big {
+		font-size: 0.7em;
+		padding: 0 3em;
+	}
+
+	&.small {
+		font-size: 0.5em;
+	}
+
+	&.disabled,
+	&:disabled {
+		@include vendor('pointer-events', 'none');
+		color: _palette(border) !important;
+
+		&:before {
+			color: _palette(border) !important;
+		}
+	}
+}
+
+.download-button {
+	background-color: #1a73e8; // Google Blue
+	text-decoration: none;
+	padding: 10px 24px;
+	font-size: 0.875rem;
+	color: white;
+	border-radius: 4px;
+	font-weight: 500;
+	letter-spacing: 0.25px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.2s, box-shadow 0.2s;
+	font-family: 'Google Sans', Roboto, Arial, sans-serif;
+	border: 1px solid transparent;
+
+	&:hover {
+		background-color: #1b66c9;
+		box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+		color: white !important;
+	}
+
+	&:active {
+		background-color: #185abc;
+	}
+}
+
+.accent-button {
+	box-shadow: inset 0 0 0 1px _palette(accent) !important;
+	color: _palette(accent) !important;
+
+	&:hover {
+		background-color: rgba(_palette(accent), 0.05);
+	}
+}
+
+.post#about {
+	>header {
+		border-bottom: 0 !important;
+
+		.meta {
+			border-left: 0 !important;
+
+			// Handle mobile view for the Resume button
+			@include breakpoint(medium) {
+				border-left: 0 !important;
+				margin: 1em 0 0 0 !important;
+				padding: 0 !important;
+				width: 100% !important;
+
+				.button {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+	}
+
+	table {
+		margin-bottom: 0;
+
+		tbody tr {
+			border: 0 !important;
+
+			// Zebra striping - restoring the default from _table.scss but keeping it borderless
+			&:nth-child(2n + 1) {
+				background-color: _palette(border-bg) !important;
+			}
+
+			&:nth-child(2n) {
+				background-color: transparent !important;
+			}
+		}
+	}
+}
+
+#download-resume-button {
+	width: auto;
+	display: inline-flex;
+	text-align: center;
+	margin-bottom: 20px;
+}
