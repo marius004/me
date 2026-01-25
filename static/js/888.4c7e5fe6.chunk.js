@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_site=self.webpackChunkpersonal_site||[]).push([[888],{33:(e,s,a)=>{e.exports=a.p+"static/media/recruiters.9ad0646723edfcaf011b.md"}}]);
