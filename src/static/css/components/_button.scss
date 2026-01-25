@@ -121,12 +121,10 @@ button,
 	}
 }
 
-.post#about {
+.post#about,
+.post#recruiters {
 	>header {
-		border-bottom: 0 !important;
-
 		.meta {
-			border-left: 0 !important;
 
 			// Handle mobile view for the Resume button
 			@include breakpoint(medium) {
