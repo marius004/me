@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
   "version": "4.0.0",
-  "homepage": "https://marius004.github.io/me",
+  "homepage": "https://mariusscarlat.com",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -24,7 +24,13 @@
       "--no-sandbox",
       "--disable-setuid-sandbox"
     ],
-    "skipThirdPartyRequests": true
+    "skipThirdPartyRequests": true,
+    "include": [
+      "/",
+      "/about",
+      "/recruiters",
+      "/resume"
+    ]
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
