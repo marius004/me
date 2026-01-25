@@ -15,10 +15,10 @@ Hello there! I'm <strong>Marius</strong> 👋 — Software Engineer at <strong>G
 &nbsp;&nbsp;
 
 # Books
-* [Site Reliability Engineering](https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X)
-* [The Site Reliability Workbook](https://www.amazon.com/Site-Reliability-Workbook-Practical-Implement/dp/1492029505)
-* [Building Secure & Reliable Systems](https://www.amazon.com/Building-Secure-Reliable-Systems-Implementing/dp/1492083127)
-* [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+* [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
+* [The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)
+* [Building Secure & Reliable Systems](https://google.github.io/building-secure-and-reliable-systems/raw/toc.html)
+* [Designing Data-Intensive Applications](https://unidel.edu.ng/focelibrary/books/Designing%20Data-Intensive%20Applications%20The%20Big%20Ideas%20Behind%20Reliable,%20Scalable,%20and%20Maintainable%20Systems%20by%20Martin%20Kleppmann%20(z-lib.org).pdf)
 * [The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines](https://www.amazon.com/dp/3031994884)
 
 # Achievements
