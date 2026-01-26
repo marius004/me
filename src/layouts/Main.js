@@ -9,18 +9,23 @@ import SideBar from '../components/Template/SideBar';
 import ScrollToTop from '../components/Template/ScrollToTop';
 import ContactIcons from '../components/Contact/ContactIcons';
 
-const Main = (props) => (
+const Main = ({
+  children = null,
+  fullPage = false,
+  title = null,
+  description = "Marius Scarlat's personal website.",
+}) => (
   <ThemeProvider>
     <HelmetProvider>
       <Analytics />
       <ScrollToTop />
       <Helmet titleTemplate="Marius / %s" defaultTitle="Marius Scarlat" defer={false}>
-        {props.title && <title>{props.title}</title>}
-        <meta name="description" content={props.description} />
-        <meta property="og:title" content={props.title ? `Marius / ${props.title}` : 'Marius Scarlat'} />
-        <meta property="og:description" content={props.description} />
-        <meta name="twitter:title" content={props.title ? `Marius / ${props.title}` : 'Marius Scarlat'} />
-        <meta name="twitter:description" content={props.description} />
+        {title && <title>{title}</title>}
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title ? `Marius / ${title}` : 'Marius Scarlat'} />
+        <meta property="og:description" content={description} />
+        <meta name="twitter:title" content={title ? `Marius / ${title}` : 'Marius Scarlat'} />
+        <meta name="twitter:description" content={description} />
         <script type="application/ld+json">
           {JSON.stringify({
             '@context': 'https://schema.org',
@@ -38,10 +43,10 @@ const Main = (props) => (
       <div id="wrapper">
         <Navigation />
         <div id="main">
-          {props.children}
+          {children}
         </div>
-        {!props.fullPage && <SideBar />}
-        {!props.fullPage && (
+        {!fullPage && <SideBar />}
+        {!fullPage && (
           <div id="footer-mobile">
             <ContactIcons />
             <p className="copyright">&copy; {new Date().getFullYear()} Marius Scarlat</p>
@@ -60,13 +65,6 @@ Main.propTypes = {
   fullPage: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,
-};
-
-Main.defaultProps = {
-  children: null,
-  fullPage: false,
-  title: null,
-  description: "Marius Scarlat's personal website.",
 };
 
 export default Main;

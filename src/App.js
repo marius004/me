@@ -14,7 +14,13 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const Resume = lazy(() => import('./pages/Resume'));
 
 const App = () => (
-  <BrowserRouter basename={PUBLIC_URL}>
+  <BrowserRouter
+    basename={PUBLIC_URL}
+    future={{
+      v7_startTransition: true,
+      v7_relativeSplatPath: true,
+    }}
+  >
     <Suspense fallback={<Main />}>
       <Routes>
         <Route path="/" element={<About />} />

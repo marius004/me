@@ -29,8 +29,7 @@
     "include": [
       "/",
       "/about",
-      "/recruiters",
-      "/resume"
+      "/recruiters"
     ]
   },
   "dependencies": {
