@@ -4,7 +4,10 @@ import ReactGA from 'react-ga';
 
 const { NODE_ENV, REACT_APP_GA_TRACKING_ID } = process.env;
 
-if (NODE_ENV === 'production') {
+const isProduction = NODE_ENV === 'production';
+const hasValidId = typeof REACT_APP_GA_TRACKING_ID === 'string' && REACT_APP_GA_TRACKING_ID.length > 5;
+
+if (isProduction && hasValidId) {
   ReactGA.initialize(REACT_APP_GA_TRACKING_ID);
 }
 
@@ -12,7 +15,7 @@ const Analytics = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (NODE_ENV === 'production') {
+    if (isProduction && hasValidId) {
       ReactGA.set({
         page: pathname,
       });

@@ -9,11 +9,19 @@ const ThemeContext = createContext({
 });
 
 export const ThemeProvider = ({ children }) => {
-    // Use system preference as default, or localStorage if set
-    const [theme, setTheme] = useState(
-        window.localStorage.getItem('theme')
-        || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'),
-    );
+    // Initial state must be deterministic for hydration (React 18)
+    const [theme, setTheme] = useState('light');
+
+    // Handle initialization and persistence in effects
+    useLayoutEffect(() => {
+        const savedTheme = window.localStorage.getItem('theme');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const initialTheme = savedTheme || systemTheme;
+
+        if (initialTheme !== theme) {
+            setTheme(initialTheme);
+        }
+    }, []);
 
     const toggleTheme = () => {
         setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));

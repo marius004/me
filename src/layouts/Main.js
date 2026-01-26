@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -26,8 +27,12 @@ const Main = ({
         <meta property="og:description" content={description} />
         <meta name="twitter:title" content={title ? `Marius / ${title}` : 'Marius Scarlat'} />
         <meta name="twitter:description" content={description} />
-        <script type="application/ld+json">
-          {JSON.stringify({
+      </Helmet>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Person',
             name: 'Marius Scarlat',
@@ -37,9 +42,9 @@ const Main = ({
               'https://www.linkedin.com/in/marius-scarlat-194464356/',
             ],
             jobTitle: 'Software Engineer',
-          })}
-        </script>
-      </Helmet>
+          }),
+        }}
+      />
       <div id="wrapper">
         <Navigation />
         <div id="main">
@@ -49,7 +54,7 @@ const Main = ({
         {!fullPage && (
           <div id="footer-mobile">
             <ContactIcons />
-            <p className="copyright">&copy; {new Date().getFullYear()} Marius Scarlat</p>
+            <p className="copyright" suppressHydrationWarning>&copy; {new Date().getFullYear()} Marius Scarlat</p>
           </div>
         )}
       </div>

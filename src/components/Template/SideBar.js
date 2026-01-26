@@ -30,7 +30,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; {new Date().getFullYear()} Marius Scarlat</p>
+      <p className="copyright" suppressHydrationWarning>&copy; {new Date().getFullYear()} Marius Scarlat</p>
     </section>
   </section>
 );

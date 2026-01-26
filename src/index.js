@@ -2,6 +2,14 @@ import React from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App';
 
+if (process.env.NODE_ENV === 'production') {
+  /* eslint-disable no-console */
+  console.log = () => { };
+  console.error = () => { };
+  console.warn = () => { };
+  /* eslint-enable no-console */
+}
+
 // See https://reactjs.org/docs/strict-mode.html
 const StrictApp = () => (
   <React.StrictMode>
