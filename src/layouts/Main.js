@@ -17,6 +17,23 @@ const Main = (props) => (
       <Helmet titleTemplate="Marius / %s" defaultTitle="Marius Scarlat" defer={false}>
         {props.title && <title>{props.title}</title>}
         <meta name="description" content={props.description} />
+        <meta property="og:title" content={props.title ? `Marius / ${props.title}` : 'Marius Scarlat'} />
+        <meta property="og:description" content={props.description} />
+        <meta name="twitter:title" content={props.title ? `Marius / ${props.title}` : 'Marius Scarlat'} />
+        <meta name="twitter:description" content={props.description} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Marius Scarlat',
+            url: 'https://mariusscarlat.com',
+            sameAs: [
+              'https://github.com/marius004',
+              'https://www.linkedin.com/in/marius-scarlat-194464356/',
+            ],
+            jobTitle: 'Software Engineer',
+          })}
+        </script>
       </Helmet>
       <div id="wrapper">
         <Navigation />
