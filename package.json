@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "lint": "eslint $(git ls-files '*.js')",
     "test": "npx jest",
-    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js"
+    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
+    "format": "npx -y prettier --write 'public/index.html' 'src/**/*.js'"
   },
   "reactSnap": {
     "puppeteerArgs": [
