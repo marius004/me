@@ -12,6 +12,7 @@ My preferred **locations** listed below in order of preference:
 | :--- | :--- | :--- |
 | Switzerland | Zurich | Preferred location |
 | United States | Bay Area, New York | Open to relocation |
+| United Kingdom | London | Open to relocation |
 | Poland | Warsaw | Current location |
 
 ---
