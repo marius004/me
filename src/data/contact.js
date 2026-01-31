@@ -2,6 +2,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faProductHunt } from '@fortawesome/free-brands-svg-icons/faProductHunt';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons/faInfoCircle';
 // See https://fontawesome.com/icons?d=gallery&s=brands,regular&m=free
 // to add other icons.
 
@@ -25,6 +26,11 @@ const data = [
     link: 'https://www.producthunt.com/@marius004',
     label: 'Product Hunt',
     icon: faProductHunt,
+  },
+  {
+    link: 'https://www.infoarena.ro/utilizator/marius004',
+    label: 'Infoarena',
+    icon: faInfoCircle,
   },
 ];
 
