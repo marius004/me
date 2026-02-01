@@ -16,6 +16,7 @@ Hello there! I'm <strong>Marius</strong> 👋 — Software Engineer at <strong>G
 
 # Books
 * [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
+* [The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)
 * [Designing Data-Intensive Applications](https://unidel.edu.ng/focelibrary/books/Designing%20Data-Intensive%20Applications%20The%20Big%20Ideas%20Behind%20Reliable,%20Scalable,%20and%20Maintainable%20Systems%20by%20Martin%20Kleppmann%20(z-lib.org).pdf)
 
 # Achievements
